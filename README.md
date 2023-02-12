@@ -1,4 +1,4 @@
-# lost_ark_daily_tracker
+# Lost Ark Daily Tracker
 
 ## Commands
 ```npm install``` : Installs the needed dependencies \
