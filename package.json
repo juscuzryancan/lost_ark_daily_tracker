@@ -43,6 +43,6 @@
     "testEnvironment": "jsdom",
     "setupFilesAfterEnv": [
       "<rootDir>/jest-setup.ts"
-    ],
+    ]
   }
 }
