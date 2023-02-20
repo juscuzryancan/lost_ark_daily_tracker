@@ -40,7 +40,7 @@ const CharacterTab = ({
 }
 
 const CharacterSelect = () => {
-  const [characters, setCharacters] = useState(["Kageyama"]);
+  const [characters, setCharacters] = useState<Array<string>>([]);
 
   const handleAddCharacter = () => {
     setCharacters([...characters, "New Character"])
@@ -49,6 +49,7 @@ const CharacterSelect = () => {
   return (
     <nav
       className="flex"
+      data-testid="character-select"
     >
       {characters.map((character, i) => {
         return (
