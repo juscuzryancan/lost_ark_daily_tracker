@@ -40,7 +40,7 @@ const CharacterTab = ({
 }
 
 const CharacterSelect = () => {
-  const [characters, setCharacters] = useState<Array<string>>([]);
+  const [characters, setCharacters] = useState<Array<string>>(["Kageyama"]);
 
   const handleAddCharacter = () => {
     setCharacters([...characters, "New Character"])
@@ -62,7 +62,10 @@ const CharacterSelect = () => {
           />
         );
       })}
-      <button onClick={handleAddCharacter}>
+      <button 
+        data-testid="add-character-button"
+        onClick={handleAddCharacter}
+      >
         +
       </button>
     </nav>
